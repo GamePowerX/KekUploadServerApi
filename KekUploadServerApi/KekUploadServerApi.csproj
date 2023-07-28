@@ -6,18 +6,20 @@
         <Nullable>enable</Nullable>
         <PackageId>GamePowerX.KekUploadServerApi</PackageId>
         <Version>1.0.0-alpha1</Version>
-        <PackageVersion>1.0.0-beta</PackageVersion>
+        <PackageVersion>1.0.0-alpha1</PackageVersion>
         <Authors>CraftingDragon007,GamePowerX</Authors>
         <Description>Plugin API for the KekUploadServer</Description>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-        <PackageReleaseNotes>Initial release beta</PackageReleaseNotes>
-        <RepositoryUrl>https://github.com/GamePowerX/KekUploadServerApi</RepositoryUrl>
+        <PackageReleaseNotes>Initial release alpha</PackageReleaseNotes>
+        <RepositoryUrl>https://github.com/GamePowerX/KekUploadServerApi.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>kekuploadserver,api,plugin</PackageTags>
-        <PackageProjectUrl>https://gamepowerx.com/projects</PackageProjectUrl>
+        <PackageProjectUrl>https://gamepowerx.com</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Copyright>Copyright (c) 2023 GamePowerX</Copyright>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        
+        <PackageIcon>Icon.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
@@ -25,6 +27,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Include="images/Icon.png" Pack="true" PackagePath="\" />
+      <None Include="../README.md" Pack="true" PackagePath="\" />
       <Folder Include="Web\" />
     </ItemGroup>
 
