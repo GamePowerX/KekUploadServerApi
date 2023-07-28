@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net7.0;net6.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>GamePowerX.KekUploadServerApi</PackageId>
+        <Version>1.0.0-alpha1</Version>
+        <PackageVersion>1.0.0-beta</PackageVersion>
+        <Authors>CraftingDragon007,GamePowerX</Authors>
+        <Description>Plugin API for the KekUploadServer</Description>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageReleaseNotes>Initial release beta</PackageReleaseNotes>
+        <RepositoryUrl>https://github.com/GamePowerX/KekUploadServerApi</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>kekuploadserver,api,plugin</PackageTags>
+        <PackageProjectUrl>https://gamepowerx.com/projects</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Web\" />
+    </ItemGroup>
+
+</Project>
