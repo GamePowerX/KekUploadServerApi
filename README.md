@@ -34,19 +34,13 @@ public class TestPlugin : IPlugin
 
     public Task Start()
     {
-        _logger.LogInformation("TestPlugin started!"); 
+        _logger.LogInformation("TestPlugin started!");
         return Task.CompletedTask;
     }
 
     public Task Unload()
     {
         _logger.LogInformation("TestPlugin unloaded!");
-        return Task.CompletedTask;
-    }
-
-    public Task Reload()
-    {
-        _logger.LogInformation("TestPlugin reloaded!");
         return Task.CompletedTask;
     }
 
