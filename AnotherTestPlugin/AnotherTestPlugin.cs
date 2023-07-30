@@ -44,12 +44,6 @@ public class AnotherTestPlugin : IPlugin
         return Task.CompletedTask;
     }
 
-    public Task Reload()
-    {
-        _logger.LogInformation("AnotherTestPlugin reloaded!");
-        return Task.CompletedTask;
-    }
-
     PluginInfo IPlugin.Info => new() {
         Name = "AnotherTestPlugin",
         Version = "1.0.0-test",

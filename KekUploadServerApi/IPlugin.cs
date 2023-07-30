@@ -28,13 +28,6 @@ public interface IPlugin
     /// <returns></returns>
     Task Unload();
     /// <summary>
-    /// This method is called when the plugin is reloaded.
-    /// When this method is called, the plugin should stop all tasks and free all resources and then reload.
-    /// </summary>
-    /// <remarks>Never call this method yourself, as it is called by the server.</remarks>
-    /// <returns></returns>
-    Task Reload();
-    /// <summary>
     /// The information about the plugin.
     /// This is used by the server to identify the plugin.
     /// It is also used by the server to check for dependencies.

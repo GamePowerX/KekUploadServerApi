@@ -21,11 +21,6 @@ public interface IKekUploadServer
     /// </summary>
     /// <param name="plugin">The plugin to unload.</param>
     Task UnloadPlugin(IPlugin plugin);
-    /// <summary>
-    /// Reloads a plugin.
-    /// </summary>
-    /// <param name="plugin">The plugin to reload.</param>
-    Task ReloadPlugin(IPlugin plugin);
 
     /// <summary>
     /// Gets a list of all plugins names.
@@ -99,6 +94,13 @@ public interface IKekUploadServer
     /// <param name="plugin">The plugin to get the logger for.</param>
     /// <returns>The logger for the specified class.</returns>
     ILogger<T> GetPluginLogger<T>(IPlugin plugin);
+    
+    /// <summary>
+    /// Registers a logger provider from a plugin.
+    /// </summary>
+    /// <param name="plugin">The plugin to register the logger provider from.</param>
+    /// <param name="loggerProvider">The logger provider to register.</param>
+    void RegisterLoggerProvider(IPlugin plugin, ILoggerProvider loggerProvider);
     
     /// <summary>
     /// This method gets a configuration value as the specified type.
@@ -254,13 +256,6 @@ public interface IKekUploadServer
     /// <param name="reason">The reason for the shutdown.</param>
     /// <param name="delay">The delay before the shutdown is initiated.</param>
     void Shutdown(IPlugin plugin, string reason = "Plugin initiated shutdown", TimeSpan delay = default);
-    /// <summary>
-    /// This method initiates the server reload.
-    /// </summary>
-    /// <param name="plugin">The plugin initiating the reload.</param>
-    /// <param name="reason">The reason for the reload.</param>
-    /// <param name="delay">The delay before the reload is initiated.</param>
-    void Reload(IPlugin plugin, string reason = "Plugin initiated reload", TimeSpan delay = default);
     
     /// <summary>
     /// This event is fired when a new upload stream is created.
