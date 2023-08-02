@@ -5,15 +5,15 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageId>GamePowerX.KekUploadServerApi</PackageId>
-        <Version>1.0.0-alpha1</Version>
-        <PackageVersion>1.0.0-alpha2</PackageVersion>
+        <Version>1.0.0-alpha3</Version>
+        <PackageVersion>1.0.0-alpha3</PackageVersion>
+        <PackageReleaseNotes>Release alpha 3, added KekUploadDummyServer</PackageReleaseNotes>
         <Authors>CraftingDragon007,GamePowerX</Authors>
         <Description>Plugin API for the KekUploadServer</Description>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-        <PackageReleaseNotes>Initial release alpha</PackageReleaseNotes>
         <RepositoryUrl>https://github.com/GamePowerX/KekUploadServerApi.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>kekuploadserver,api,plugin</PackageTags>
+        <PackageTags>kekuploadserver,uploadserver,api,plugin,pluginapi</PackageTags>
         <PackageProjectUrl>https://gamepowerx.com</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <Copyright>Copyright (c) 2023 GamePowerX</Copyright>
