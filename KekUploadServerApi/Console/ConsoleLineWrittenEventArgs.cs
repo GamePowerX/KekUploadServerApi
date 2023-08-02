@@ -6,10 +6,9 @@ public class ConsoleLineWrittenEventArgs : EventArgs
     {
         Line = line;
     }
-    
+
     /// <summary>
-    /// The line that was written to the console.
+    ///     The line that was written to the console.
     /// </summary>
     public string Line { get; }
-
 }

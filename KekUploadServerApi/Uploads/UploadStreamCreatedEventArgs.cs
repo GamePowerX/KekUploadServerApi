@@ -6,9 +6,9 @@ public class UploadStreamCreatedEventArgs : EventArgs
     {
         UploadStream = uploadStream;
     }
-    
+
     /// <summary>
-    /// The upload stream that was created.
+    ///     The upload stream that was created.
     /// </summary>
     public IUploadItem UploadStream { get; }
 }

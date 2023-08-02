@@ -5,8 +5,8 @@ namespace TestPlugin;
 
 public class TestPlugin : IPlugin
 {
-    private IKekUploadServer _server = null!;
     private ILogger<TestPlugin> _logger = null!;
+    private IKekUploadServer _server = null!;
 
     public Task Load(IKekUploadServer server)
     {
